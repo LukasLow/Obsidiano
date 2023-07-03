@@ -20,7 +20,9 @@ jobs:
           pip install --upgrade pip
           pip install obsidianhtml==3.5.2
           obsidianhtml convert -i clone-path/config.yaml -v
-          touch html/.nojekyll
+          pwd
+          ls -lah
+          touch /home/runner/work/Obsidiano/Obsidiano/output/html/.nojekyll
 
       - name: Publish to Github Pages
         uses: s0/git-publish-subdir-action@develop
