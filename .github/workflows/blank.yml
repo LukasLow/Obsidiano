@@ -22,6 +22,7 @@ jobs:
           obsidianhtml convert -i clone-path/config.yaml -v
           pwd
           ls -lah
+          echo "learn.lowsky.eu" > /home/runner/work/Obsidiano/Obsidiano/output/html/CNAME
           touch /home/runner/work/Obsidiano/Obsidiano/output/html/.nojekyll
 
       - name: Publish to Github Pages
